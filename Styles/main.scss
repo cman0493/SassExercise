@@ -16,7 +16,7 @@
         @extend %center
     }
     @include flex(space-between, center);
-  h4 {
+    h4 {
     display: none;
   }
 }
@@ -24,8 +24,8 @@
     background-color: silver;
     h1 {
         text-decoration: underline;
-        @extend %center
         margin-bottom: 25px * 4;
+        @extend %center
     }
     h2 {
         text-decoration: line-through;
