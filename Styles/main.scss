@@ -4,26 +4,28 @@
     background-color: tan;
     h1 {
         color: #ddd;
-        margin-bottom: 25px*4;
-        @include flex (center, flex-start)
     }
     h2 {
         background-color: $brown1;
-        @include flex (center, center)
     }
     h3 {
         color: $brown1;
-        @include flex (center, flex-end,)
     }
     h1:hover {
+        text-decoration: underline;
         @extend %center
     }
+    @include flex(space-between, center);
+  h4 {
+    display: none;
+  }
 }
 .minor {
     background-color: silver;
     h1 {
         text-decoration: underline;
         @extend %center
+        margin-bottom: 25px * 4;
     }
     h2 {
         text-decoration: line-through;
